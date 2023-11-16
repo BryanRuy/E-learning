@@ -1,0 +1,73 @@
+@import "../../@core/scss/base/bootstrap-extended/variables";
+
+.question-test-detail{
+    img{
+      width: auto;
+      border-radius: 7px;
+      border: 3px solid #fff; 
+      max-height: 300px;
+      margin-bottom: 1rem
+    }
+    p{
+      float:right;
+    }
+    h6{
+      font-size:1rem;
+      padding: 0.5rem 0rem;
+    }
+    h6 .times-icon{
+      display:none;
+    }
+    h6 .check-icon{
+      display:none;
+    }
+  
+    h6.wrong-answer .times-icon{
+      display:unset;
+    }
+  
+    h6.right-answer .check-icon{
+      display:unset;
+    }
+  
+    ul{
+      list-style-type: none;
+      padding: 0rem 1rem;
+      li{
+        padding: 1rem;
+      }
+      li.selected-option{
+        color: #fff;
+        font-weight: 500;
+      }
+      li.correct-option{
+        color: #fff;
+        font-weight: 500;
+      }
+      li .check-icon{
+        display: none;
+      }
+      li.correct-option .check-icon{
+        display: unset;
+      }
+      
+    }
+  
+  }
+
+  .test-list{
+    .btn-header  {
+      position: absolute;
+      top: 16px;
+      right: 64px;
+    }
+  }
+
+  .past-and-upcoming-test-student{
+    .btn-header  {
+      position: absolute;
+      top: 16px;
+      right: 64px;
+    }
+  }
+  

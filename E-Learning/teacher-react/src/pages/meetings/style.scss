@@ -1,0 +1,41 @@
+.meeting-table-body {
+	.table-responsive {
+		min-height: 300px !important;
+	}
+}
+
+.close-icon {
+	position: absolute;
+	right: 15px;
+}
+
+.custom-picker {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 2.714rem;
+	color: #6e6b7b;
+	background-color: unset;
+	background-clip: padding-box;
+	border: 1px solid #d8d6de;
+	border-radius: 0.357rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+	input {
+		color: #6e6b7b;
+		padding-left: 6px;
+		border: none;
+		outline: none;
+		background-color: unset;
+	}
+}
+
+.dark-layout {
+	.custom-picker {
+		border: 1px solid #404656 !important;
+		input {
+			color: #b4b7bd;
+		}
+	}
+}

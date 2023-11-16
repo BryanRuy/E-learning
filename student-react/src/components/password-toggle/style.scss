@@ -1,0 +1,11 @@
+.c-password-toggle{
+	position:relative;
+	.btn-password{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	input{
+		padding-left: 48px;
+	}
+}

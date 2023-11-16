@@ -1,0 +1,87 @@
+.dark-layout .assignments-application {
+	pre {
+		background-color: #fff !important;
+		min-height: 100%;
+	}
+
+	pre::-moz-selection {
+		/* Code for Firefox */
+		color: red;
+		background: yellow;
+	}
+}
+.assignments-application {
+	.ui-loader {
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+
+		.card {
+			height: 100%;
+			.card-body {
+				height: 100%;
+				overflow-y: auto;
+			}
+		}
+	}
+
+	.assignment-row {
+		height: 100%;
+		overflow: auto;
+	}
+
+	.assignment-actions {
+		background-color: #eeeeee;
+		border-top-left-radius: 8px;
+		border-bottom: 1px solid #d9d9d9;
+	}
+	.assignment-content {
+		background-color: #f3f5f7;
+		width: inherit;
+		overflow: auto;
+	}
+
+	.rdw-editor-wrapper {
+		min-height: 400px;
+		height: 100% !important;
+		background-color: inherit !important;
+		color: inherit !important;
+		border-radius: 0px !important;
+		.rdw-editor-toolbar {
+			border-radius: 0px !important;
+			background-color: inherit !important;
+			color: inherit !important;
+		}
+
+		.rdw-editor-main {
+			min-height: 400px;
+			height: 100% !important;
+		}
+	}
+}
+
+.dark-layout {
+	.assignments-application {
+		.assignment-actions {
+			background-color: unset;
+		}
+		.assignment-content {
+			background-color: unset;
+		}
+
+		.rdw-editor-wrapper {
+			.rdw-editor-toolbar {
+				.rdw-option-wrapper.rdw-option-active {
+					background-color: #9135ab;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.assignment-row {
+		height: unset !important;
+		overflow: auto !important;
+	}
+}

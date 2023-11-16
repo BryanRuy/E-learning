@@ -1,0 +1,407 @@
+.new-chat-head-item {
+	.action-btn {
+		visibility: hidden;
+		pointer-events: none;
+	}
+}
+.new-chat-head-item:hover {
+	.action-btn {
+		visibility: visible;
+		pointer-events: all;
+	}
+}
+
+.chat-application {
+	.chat-app-window .user-chats .msg-delivery-status img {
+		border: 0px solid #fff !important;
+	}
+
+	.chat-app-window .user-chats .msg-delivery-status-container {
+		float: right;
+	}
+
+	.shared-media-item .download-btn {
+		display: none;
+	}
+
+	.shared-media-item:hover .download-btn {
+		display: unset;
+	}
+
+	.msg-time {
+		font-size: 11px;
+		margin-top: 4px !important;
+		margin-bottom: 16px;
+	}
+
+	.chat-app-window .chats .msg-time {
+		text-align: right;
+		margin-right: 20px;
+		margin-top: -6px;
+	}
+
+	.message-user-name {
+		font-size: 11px;
+		font-weight: bold;
+	}
+
+	.chat-body {
+		margin: 0px !important;
+		margin-bottom: 3px !important;
+	}
+
+	.chat-content {
+		margin-bottom: 0px !important;
+	}
+
+	.chat-content.file {
+		max-width: 350px !important;
+	}
+
+	.chat-app-window .chats .chat-avatar {
+		float: right;
+		position: absolute;
+		right: 7px;
+		margin-top: -20px;
+	}
+
+	.chat-app-window .chats .chat-left .chat-avatar {
+		float: left;
+		position: absolute;
+		right: unset;
+		left: 7px;
+	}
+
+	.chat-content .preview {
+		margin-top: 4px;
+		width: 100%;
+	}
+
+	.preview img {
+		width: inherit;
+	}
+
+	.preview video {
+		width: inherit;
+	}
+
+	.chat .preview {
+		.rhap_container {
+			width: 200px;
+			border-radius: 5px;
+			margin-top: 12px;
+			padding: 0px 12px 0px 0px;
+			background: transparent;
+			box-shadow: none;
+
+			.rhap_main-controls button {
+				color: #fff;
+			}
+
+			.rhap_progress-section {
+				.rhap_progress-bar {
+					background: #4f4f4f;
+
+					.rhap_download-progress {
+						background: #ababab;
+					}
+
+					.rhap_progress-filled {
+						background: #fff;
+					}
+
+					.rhap_progress-indicator {
+						background: #fff;
+					}
+				}
+			}
+
+			.rhap_time {
+				font-size: 0.9rem;
+				color: inherit;
+			}
+
+			.rhap_horizontal-reverse .rhap_controls-section {
+				margin-right: 0px;
+			}
+
+			.rhap_controls-section {
+				flex: 0;
+			}
+
+			.rhap_volume-controls {
+				display: none;
+			}
+
+			.rhap_play-pause-button {
+				width: 32px;
+				height: 32px;
+				margin-bottom: 6px;
+				svg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.rhap_additional-controls {
+				display: none;
+			}
+
+			.rhap_time.rhap_current-time {
+				display: none;
+			}
+
+			.rhap_progress-indicator {
+				width: 12px;
+				height: 12px;
+				top: -4px;
+			}
+		}
+	}
+
+	.chat-left .preview {
+		.rhap_container {
+			.rhap_main-controls button {
+				color: inherit;
+			}
+
+			.rhap_progress-section {
+				.rhap_progress-bar {
+					background: #4f4f4f;
+
+					.rhap_download-progress {
+						background: #ababab;
+					}
+
+					.rhap_progress-filled {
+						background: inherit;
+					}
+
+					.rhap_progress-indicator {
+						background: inherit;
+					}
+				}
+			}
+		}
+	}
+
+	@keyframes anim-float {
+		0% {
+			margin-bottom: 16px;
+			transform: scale(1.1);
+		}
+		50% {
+			margin-bottom: 0px;
+			transform: scale(1);
+		}
+		100% {
+			margin-bottom: 16px;
+			transform: scale(1.1);
+		}
+	}
+
+	.chat-dropzone .icon {
+		animation: anim-float 1s infinite ease-in-out;
+	}
+
+	.chat-dropzone {
+		width: 100%;
+		height: 100%;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		z-index: 10000;
+		color: rgb(255, 255, 255);
+	}
+
+	.chat-dropzone * {
+		pointer-events: none;
+	}
+
+	.chat-dropzone.visible {
+		display: flex;
+	}
+
+	.dark-layout {
+		.emoji-picker-custom .emoji-picker-react {
+			background: #161d31;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.399);
+			border: 1px solid #161d31;
+		}
+
+		.chat-left .preview {
+			.rhap_time {
+				color: rgb(211, 211, 211);
+			}
+		}
+
+		.chat .preview {
+			.rhap_container {
+				.rhap_main-controls button {
+					color: #e5e5e5;
+				}
+
+				.rhap_progress-section {
+					.rhap_progress-bar {
+						background: #e5e5e5;
+						.rhap_download-progress {
+							background: #ababab;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.chat-content a {
+		color: inherit;
+		text-decoration: underline;
+	}
+
+	.chat-content a:hover {
+		color: inherit;
+		text-decoration: underline;
+	}
+
+	.chat-app-window .chats .chat-left .msg-time {
+		text-align: left;
+		margin-left: 20px;
+	}
+
+	.chat-app-form .chat-file {
+		font-size: 20px;
+	}
+
+	.emoji-picker-custom .emoji-picker-react {
+		width: 320px;
+		bottom: 70px;
+		right: 8px;
+		z-index: 8;
+		position: absolute;
+
+		.emoji-categories {
+			button {
+				background-image: none;
+				opacity: 1;
+				font-size: 1.1rem;
+			}
+
+			.icn-smileys_people::before {
+				content: "😃";
+			}
+
+			.icn-animals_nature::before {
+				content: "🐼";
+			}
+
+			.icn-food_drink::before {
+				content: "🍔";
+			}
+
+			.icn-travel_places::before {
+				content: "🏠";
+			}
+
+			.icn-activities::before {
+				content: "⚽️";
+			}
+
+			.icn-objects::before {
+				content: "⏰";
+			}
+
+			.icn-symbols::before {
+				content: "❤️";
+			}
+
+			.icn-flags::before {
+				content: "🚩";
+			}
+		}
+
+		.emoji-search {
+			margin-bottom: 6px;
+			padding: 4px 12px;
+		}
+
+		.skin-tones-list {
+			position: absolute;
+			top: 7px;
+			label {
+				width: 14px;
+			}
+		}
+
+		.content-wrapper:before {
+			display: none;
+		}
+
+		.emoji-group:before {
+			display: none;
+		}
+	}
+
+	.btn-scroll-top-chat {
+		right: 15px;
+		bottom: 72px;
+		position: absolute;
+	}
+
+	.chat-selected-files-container {
+		display: flex;
+		padding-top: 10px;
+		position: absolute;
+		bottom: 50px;
+	}
+
+	.chat-selected-files-area {
+		width: -webkit-fill-available;
+	}
+
+	.chat-selected-files-area .selected-file {
+		justify-content: center;
+		align-items: center;
+		padding: 6px;
+	}
+
+	.selected-file .progress {
+		height: 4px;
+		margin-bottom: 2px;
+	}
+
+	.chat-selected-files-area button {
+		background-color: inherit;
+		border: none;
+		display: inline;
+		color: inherit;
+		padding: 4px;
+		width: 24px;
+		height: 24px;
+		outline: none;
+		float: right;
+	}
+
+	@media only screen and (max-width: 320px) {
+		.chat-content {
+			max-width: 100% !important;
+		}
+		.chat .preview {
+			.rhap_container {
+				width: 180px;
+			}
+		}
+	}
+
+	@media (min-width: 321px) and (max-width: 375px) {
+		.chat-content {
+			max-width: 100% !important;
+		}
+	}
+
+	@media (min-width: 376px) and (max-width: 600px) {
+		.chat-content {
+			max-width: 95% !important;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+export const REGISTER_USER = "register_user"
+export const REGISTER_STUDENT = "register_student"
+export const REGISTER_STUDENT_SUCCESSFUL = "register_student_successful"
+export const REGISTER_USER_SUCCESSFUL = "register_user_successfull"
+export const REGISTER_USER_FAILED = "register_user_failed"
+export const API_ERROR = "REGISTER_API_ERROR"

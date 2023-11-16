@@ -1,0 +1,34 @@
+.shadow-stats-item {
+	box-shadow: #9896963b 0px 2px 8px 0px;
+}
+
+.dashboard-stats-item {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 22px 20px;
+	border-radius: 5px;
+	box-shadow: #ad67c02f 0px 2px 8px 0px;
+
+	.heading {
+		font-size: 1.3rem;
+		line-height: 24px;
+	}
+	.count {
+		font-weight: bold;
+		font-size: 2rem;
+		margin-right: 10px;
+	}
+}
+
+.shadow-container {
+	box-shadow: 0px 4px 24px 0px rgba(34, 41, 47, 0.123);
+	border-radius: 5px;
+}
+
+.dark-layout {
+	.shadow-container {
+		box-shadow: 0px 4px 24px 0px rgba(207, 208, 209, 0.123) !important;
+	}
+}

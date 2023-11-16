@@ -1,0 +1,62 @@
+.blog-detail-banner-container {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: flex-end;
+	font-size: 2.5rem;
+	color: #fff;
+	text-shadow: 1px 1px 10px #6f6f6f;
+
+	span {
+		z-index: 10;
+	}
+
+	.blog-banner-gradient {
+		z-index: 5;
+		width: 100%;
+		height: 400px;
+		position: absolute;
+		background: -webkit-linear-gradient(
+			bottom,
+			#000 0%,
+			#0000000a 23%,
+			#ffffff00 24%,
+			#ffffff00 100%
+		);
+	}
+}
+
+#blog-content-container {
+	p {
+		font-size: 1.3rem;
+		line-height: 1.7;
+		word-spacing: 2px;
+	}
+	img {
+		width: 60%;
+		height: auto;
+		margin: 23px 20%;
+	}
+}
+
+.blog-category-pills {
+	display: flex;
+	width: 100%;
+	overflow-x: auto;
+	box-sizing: content-box;
+	span {
+		margin-left: 6px;
+		padding: 10px 10px;
+	}
+}
+
+.blog-category-pills {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.blog-category-pills::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}

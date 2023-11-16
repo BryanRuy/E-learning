@@ -1,0 +1,51 @@
+@import "../../@core/scss/base/bootstrap-extended/variables";
+
+.question-control{
+    .option-text{
+        border:none;
+        margin-top: -9px;
+    }
+    .question-text{
+        color: #FFFF00;
+    }
+    .single-option:hover .btn-delete-option{
+        display:unset!important;
+    }
+    .question-marks{
+        border: none;
+        padding: 0px;
+        margin-top: 8px;
+        width: 50px;
+    }
+
+    .single-option:hover .btn-icon{
+        display: unset;
+    }
+
+    .single-option .btn-icon{
+        display: none;
+    }
+
+    :hover .dropdown-option{
+        display: unset;
+    }
+
+    .dropdown-option{
+        display: none;
+    }
+    
+    .custom-file-container .remove-file-icon{
+        position: absolute;
+        right: 90px;
+        z-index: 2;
+        top: 26px;
+    }
+    
+}
+
+.attempt-obtained-marks-with-image {
+    position: absolute;
+    bottom: 4px;
+}
+
+

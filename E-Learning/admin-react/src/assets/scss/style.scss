@@ -1,0 +1,58 @@
+/*================================================================================
+	Item Name: noName - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+@import "../../@core/scss/base/bootstrap-extended/variables";
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $gray-100 $gray-400;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  border-radius: 50px;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $gray-100;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $gray-400;
+  border-radius: 50px;
+}
+
+.upcoming-meeting-item {
+  .remind-me-btn {
+    display: none;
+  }
+
+  &:hover {
+    .remind-me-btn {
+      display: unset;
+    }
+  }
+}
+
+.card-upcoming-meetings {
+  .upcoming-meeting-list {
+    height: 229px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 12px;
+  }
+}
+
+// .footer-custom{
+// 	background: $body-bg;
+// }

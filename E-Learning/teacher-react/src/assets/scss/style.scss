@@ -1,0 +1,181 @@
+/*================================================================================
+	Item Name: noName - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+@import "../../@core/scss/base/bootstrap-extended/variables";
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $gray-100 $gray-400;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  border-radius: 50px;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $gray-100;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $gray-400;
+  border-radius: 50px;
+}
+
+.upcoming-meeting-item {
+  .remind-me-btn {
+    display: none;
+  }
+
+  &:hover {
+    .remind-me-btn {
+      display: unset;
+    }
+  }
+}
+
+.card-upcoming-meetings {
+  .upcoming-meeting-list {
+    height: 229px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 12px;
+  }
+}
+// .footer-custom-background{
+// 	background: $body-bg!important;
+// }
+.chat-app-window .user-chats .msg-delivery-status img {
+  border: 0px solid #fff !important;
+}
+
+.chat-app-window .user-chats .msg-delivery-status-container {
+  float: right;
+}
+
+.card-item-container {
+  .card-item {
+    margin: 8px -4px;
+  }
+}
+
+.card-item {
+  align-items: center;
+  padding-left: 8px !important;
+  box-shadow: 3px 0px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  padding: 12px 24px;
+
+  div {
+    img {
+      width: auto;
+      height: 32px;
+    }
+
+    & > div:nth-child(2) {
+      padding-left: 24px;
+      h5,
+      h6,
+      p,
+      small {
+        margin: 0;
+      }
+      h6 {
+        font-size: 0.75rem;
+      }
+      p {
+        line-height: 0.7rem;
+      }
+      p > small {
+        font-size: 0.7rem !important;
+      }
+    }
+  }
+  .btn-delete {
+    float: right;
+    display: none;
+  }
+
+  &.active {
+    background-color: $primary;
+    h6,
+    h5,
+    p {
+      color: $white;
+    }
+  }
+  &:hover {
+    .btn-delete {
+      display: unset;
+    }
+  }
+  //   Col {
+  //     button {
+  //       position: absolute;
+  //       right: -15px;
+  //     }
+  //   }
+}
+
+.secured-by-stripe {
+  display: flex;
+  justify-content: right;
+  margin-top: 24px;
+  img {
+    width: 150px;
+  }
+}
+
+.subscription-page {
+  .pay-subscription-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    .btn {
+      margin-bottom: 12px !important;
+    }
+  }
+}
+
+.ebook-card {
+  position: relative;
+  .ebook-price {
+    position: absolute;
+    background-color: #0000007d;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 12px 24px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-item {
+    img {
+      width: 32px !important;
+      height: auto !important;
+    }
+    & > div:nth-child(2) {
+      padding-left: 12px;
+      h5 {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.main-banner {
+	background: #fff;
+	padding: 32px;
+	border-radius: 32px;
+	box-shadow: 2px 2px 24px #65156e47;
+}
+
+@media screen and (max-width: 768px) {
+	#home-banner > div > div.sec-title > h2 {
+		text-align: center;
+	}
+}
+
+body {
+	background: url(../images/right.png) no-repeat;
+	background-position-x: right;
+	background-size: contain;
+}
+
+.page-wrapper {
+	background: url(../images/left.png) no-repeat;
+	background-position-x: -60px;
+}
+
+@media screen and (max-width: 1200px) {
+	.page-wrapper {
+		background-position-x: -250px;
+	}
+}

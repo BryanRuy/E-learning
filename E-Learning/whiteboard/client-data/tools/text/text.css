@@ -1,0 +1,24 @@
+#textToolInput {
+	position:fixed;
+	top:-1000px; /*Hidden*/
+	left: 80px;
+	width:500px;
+	border-radius: 7px;
+	height: 45px;
+	background: #F1F3F6;
+	box-shadow: -3px -3px 8px #FFFFFF, 3px 3px 8px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+	border: none;
+	outline: none;
+	padding: 0px 14px;
+}
+
+#textToolInput:focus {
+	top: 5px;
+}
+
+text {
+	font-family:"Arial", "Helvetica", sans-serif;
+	user-select:none;
+	-moz-user-select:none;
+}
+

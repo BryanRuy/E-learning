@@ -1,0 +1,121 @@
+.app-document-container {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+#attach-user-doc {
+	width: 10px;
+}
+
+ul.list-documents {
+	list-style-type: none;
+	padding: 0px;
+	li {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		padding: 6px 2px;
+		font-size: 14px;
+		font-weight: 450;
+		color: inherit;
+		padding: 10px 14px !important;
+		span {
+			margin-left: 8px;
+			color: inherit;
+		}
+	}
+	li.active {
+		color: #9135ab !important;
+	}
+	li:hover {
+		background: linear-gradient(118deg, #9135ab, rgba(145, 53, 171, 0.7));
+		color: #fff !important;
+		font-weight: 400;
+		border-radius: 4px;
+	}
+}
+
+.user-document-progress-container {
+	min-width: 250px;
+	position: fixed;
+	bottom: 60px;
+	right: 40px;
+	background-color: #f7f7f7;
+	color: inherit;
+	z-index: 100;
+	padding: 14px 14px;
+	border-radius: 6px;
+
+	.file {
+		background-color: inherit;
+		color: inherit;
+		z-index: 100;
+		margin-bottom: 8px;
+
+		.progress {
+			height: 4px;
+		}
+
+		.details {
+			display: flex;
+			margin-top: 5px;
+
+			button {
+				border: none;
+				outline: none;
+				background-color: inherit !important;
+				color: inherit !important;
+			}
+		}
+	}
+}
+
+.page-item.active .page-link {
+	z-index: 0;
+}
+
+.css-9gakcf-option {
+	background-color: #9135ab !important;
+}
+.css-1pahdxg-control:hover {
+	border-color: #9135ab !important;
+}
+
+.css-1n7v3ny-option {
+	background-color: white !important;
+}
+
+.rdt_TableHead {
+	.rdt_TableHeadRow {
+		.rdt_TableCol:first-child {
+			display: none;
+		}
+		.rdt_TableCol:nth-child(3) {
+			max-width: 120px !important;
+		}
+		.rdt_TableCol:nth-child(4) {
+			max-width: 150px !important;
+			min-width: 150px;
+		}
+		.rdt_TableCol:last-child {
+			max-width: 120px !important;
+		}
+	}
+}
+
+.rdt_TableBody {
+	.rdt_TableCell:first-child {
+		display: none;
+	}
+	.rdt_TableCell:nth-child(3) {
+		max-width: 120px !important;
+	}
+	.rdt_TableCell:nth-child(4) {
+		max-width: 150px !important;
+		min-width: 150px;
+	}
+	.rdt_TableCell:last-child {
+		max-width: 120px;
+	}
+}
